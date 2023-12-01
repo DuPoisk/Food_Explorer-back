@@ -1,1 +1,7 @@
 node_modules
+.env
+
+
+
+
+subtituido em package.json - "start": "node ./src/server.js",
