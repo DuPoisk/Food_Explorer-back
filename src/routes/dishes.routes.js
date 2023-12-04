@@ -12,7 +12,7 @@ const uploadConfig = require('../configs/upload');
 const upload = multer(uploadConfig.MULTER);
 
 dishesRoutes.post("/", dishController.create); // acessando 
-dishRoutes.get("/", dishController.index);
+dishesRoutes.get("/", dishController.index);
 dishesRoutes.put("/:id",dishController.update);
 dishesRoutes.patch('/:id', upload.single('avatar'),dishAvatarController.update);
 dishesRoutes.get("/:id", dishController.show);
