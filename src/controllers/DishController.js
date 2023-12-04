@@ -25,8 +25,8 @@ class DishController {
       }
     })
 
-    await knex('Ingredients').insert(ingredient)
-    return response.status(201).json()
+    await knex('Ingredients').insert(ingredient);
+    return response.status(201).json();
   }
   
 
@@ -66,9 +66,9 @@ class DishController {
     return response.json(dishInfo);
   }
 
-  async update(request,response){
-    const {category, title, description, price}= request.body;
-  }
+  // async update(request,response){
+  //   const {category, title, description, price}= request.body;
+  // }
 
   async delete(request,response){
     const{id}= request.params;
