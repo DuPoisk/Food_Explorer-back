@@ -1,7 +1,7 @@
 require("dotenv/config");
 //require("express-async-errors");
 const express = require("express"); //st08.2.4
-//const migrationsRun = require("./database/sqlite/migrations");
+const migrationsRun = require("./database/sqlite/migrations");
 const database = require("./database/sqlite");
 
 const AppError = require("./utils/AppError");
@@ -17,6 +17,7 @@ const app = express(); //st08.2.4 para inicializar
 app.use(cors()); //st10.3.2
 app.use(express.json()); // (st08.2.13-Body_Params) diz qual o formato que quero que mostre o resultado da minha requisção
 app.use(routes); /* AS ROTAS ESTÃO AQUI!*/
+migrationsRun();
 app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER)); //static é para servir aquivos estáticos. No caso, essa linha refere-se à imagem do avatar
 
 database();

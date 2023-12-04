@@ -21,7 +21,7 @@ class DiskStorage {
   async deleteFile(file) {
     const filePath = path.resolve(uploadConfig.UPLOADS_FOLDER, file);
 
-    //try e catch para tratamento de exceções, necessário para a manipulaçã ode arquivos desse tipo na aplicação
+    //try e catch para tratamento de exceções, necessário para a manipulação de arquivos desse tipo na aplicação
     try { 
       await fs.promises.stat(filePath); //fs.promises.stat é para verificar o estado do filePath. Stat retorna o estado(status) do arquivo, por exemplo se ele está corrompido, ou disponível, etc
     } catch { // caso algo de errado
