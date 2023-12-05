@@ -7,6 +7,7 @@
 
 - O Food Explorer consiste em um menu responsivo, o qual pode ser utilizado para um restaurante para prestação de serviço online. Dessa forma, o menu fica acessível para o cliente escolher os itens de comida e bebida que deseja comprar, enquanto o administrador fica habilitado a fazer edição dos pratos e adicionar novos itens ao menu.
 - [Layout do projeto no figma](https://www.figma.com/file/MtkdLx0zN7OrLa1Fv1u4Zm/food-explorer-v2-(Community)?node-id=201%3A1532&mode=dev).
+- Disponível em:[https://myfoodexplorer-api-36q8.onrender.com](https://myfoodexplorer-api-36q8.onrender.com)
   
 
 ## :bulb: Colocando em prática
