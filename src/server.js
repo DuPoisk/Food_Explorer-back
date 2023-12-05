@@ -36,5 +36,5 @@ app.use((err, request, response, next) => {
 
 
 //inicializando o servidor
-const PORT = process.env.SERVER_PORT ?? '3333'; // endereço
+const PORT = process.env.SERVER_PORT || '3000'; // endereço
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`)); // fique escutando na porta PORT e quando ela iniciar, vai soltar uma msg dizendo qual é essa porta
